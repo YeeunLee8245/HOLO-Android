@@ -157,7 +157,7 @@ class GpsFragment : BaseFragment<FragmentGpsBinding>(), OnMapReadyCallback {
                 for (ad in address){
                     Log.d("주소 정보", address.toString())
                     if (ad.thoroughfare != null && ad.thoroughfare.length > 0){
-                        town = address.get(0).thoroughfare
+                        town = ad.thoroughfare
                         break
                     }
                 }
